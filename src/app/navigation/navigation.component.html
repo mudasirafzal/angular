@@ -1,0 +1,62 @@
+<!--Main Navigation-->
+<nav id="nav-main">
+  <ul>
+    <li>
+      <a
+        routerLink="home"
+        (click)="getActiveTab('home')"
+        [class.active]="activetab === ''"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/about"
+        (click)="getActiveTab('about')"
+        [class.active]="activetab === 'about'"
+        >About</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/gallery"
+        (click)="getActiveTab('gallery')"
+        [class.active]="activetab === 'gallery'"
+        >Gallery</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/services"
+        (click)="getActiveTab('services')"
+        [class.active]="activetab === 'services'"
+        >Services</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/testimonials"
+        (click)="getActiveTab('testimonial')"
+        [class.active]="activetab === 'testimonial'"
+        >Testimonials</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/clients"
+        (click)="getActiveTab('clients')"
+        [class.active]="activetab === 'clients'"
+        >Clients</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/pricing"
+        (click)="getActiveTab('pricing')"
+        [class.active]="activetab === 'pricing'"
+        >Pricing</a
+      >
+    </li>
+  </ul>
+</nav>
+<!--End of Main Navigation-->
